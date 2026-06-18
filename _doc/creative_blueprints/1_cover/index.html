@@ -1,0 +1,55 @@
+<style>
+  .sl-cover { display: flex; width: 100%; height: 100%; }
+  .mode-landscape .sl-cover { flex-direction: row; }
+  .mode-portrait .sl-cover { flex-direction: column; }
+  .mode-landscape .sl-content { width: 54%; flex-shrink: 0; }
+  .mode-portrait .sl-content { flex: 1; }
+  .mode-landscape .sl-visual { flex: 1; }
+  .mode-portrait .sl-visual { height: 210px; flex-shrink: 0; order: -1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-cover">
+
+    <!-- Left: Content -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <div class="flex flex-col gap-5">
+        <span class="inline-flex w-fit text-xs font-bold tracking-widest uppercase text-indigo-700 bg-indigo-50 border border-indigo-100 px-3 py-1.5 rounded-full">
+          Affiliate Commerce Platform
+        </span>
+        <h1 class="text-5xl font-black text-slate-900 leading-tight tracking-tight">
+          Curate.<br>Link.<br><span class="text-indigo-600">Earn.</span>
+        </h1>
+        <p class="text-sm text-slate-500 leading-relaxed max-w-xs">
+          A zero-inventory affiliate storefront that turns curated product recommendations into commissions — no logistics, no checkout, just smart outbound links to external stores.
+        </p>
+      </div>
+      <div>
+        <div class="w-8 h-0.5 bg-indigo-200 rounded-full mb-3"></div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Premium%20curated%20affiliate%20e-commerce%20storefront%2C%20elegant%20product%20grid%20cards%20with%20shop%20now%20buttons%2C%20deep%20indigo%20and%20white%20color%20scheme%2C%20professional%20digital%20commerce%20interface%2C%20editorial%20product%20photography%2C%20clean%20modern%20UI"
+        alt="Affiliate storefront preview"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-indigo-900/25 to-indigo-900/65"></div>
+      <!-- Floating revenue event card -->
+      <div class="absolute bottom-8 left-6 right-6 bg-white rounded-2xl p-4 shadow-xl">
+        <div class="text-xs text-slate-400 font-medium mb-1.5">Core Revenue Event</div>
+        <div class="flex items-center justify-between gap-3">
+          <span class="text-sm font-bold text-slate-800">Affiliate click-through</span>
+          <span class="bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Commission Earned ✓</span>
+        </div>
+      </div>
+      <!-- Top badge -->
+      <div class="absolute top-8 right-6 bg-white/15 border border-white/25 rounded-xl px-4 py-2">
+        <span class="text-white text-xs font-semibold tracking-wide">No Inventory · No Checkout</span>
+      </div>
+    </div>
+
+  </div>
+</section>
