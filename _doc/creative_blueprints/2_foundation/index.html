@@ -1,0 +1,77 @@
+<style>
+  .sl-foundation { display: flex; width: 100%; height: 100%; }
+  .mode-landscape .sl-foundation { flex-direction: row; }
+  .mode-portrait .sl-foundation { flex-direction: column; }
+  .mode-landscape .sl-main { width: 62%; flex-shrink: 0; }
+  .mode-portrait .sl-main { flex: 1; }
+  .mode-landscape .sl-visual { flex: 1; }
+  .mode-portrait .sl-visual { height: 160px; flex-shrink: 0; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-foundation">
+
+    <!-- Left: Problem + Solution stacked -->
+    <div class="sl-main flex flex-col p-10 gap-4">
+
+      <!-- Problem zone -->
+      <div class="flex-1 bg-amber-50 border border-amber-100 rounded-2xl p-5 flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center flex-shrink-0">
+            <span class="text-white text-xs font-black leading-none">!</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase text-amber-700">The Problem</span>
+        </div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-start gap-2.5">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0"></span>
+            <span class="text-sm text-slate-700 leading-snug">Affiliate links are scattered across spreadsheets, bio tools, and generic link trees — no unified, branded home for recommendations.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0"></span>
+            <span class="text-sm text-slate-700 leading-snug">Unbranded, generic link hubs erode visitor trust — people hesitate, bounce, and commission revenue slips away.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0"></span>
+            <span class="text-sm text-slate-700 leading-snug">No click tracking or analytics — you're curating products blind, with zero visibility into what actually converts.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution zone -->
+      <div class="flex-1 bg-indigo-50 border border-indigo-100 rounded-2xl p-5 flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-indigo-600 flex items-center justify-center flex-shrink-0">
+            <span class="text-white text-xs font-black leading-none">✓</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase text-indigo-700">The Solution</span>
+        </div>
+        <ul class="flex flex-col gap-2.5">
+          <li class="flex items-start gap-2.5">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0"></span>
+            <span class="text-sm text-slate-700 leading-snug">A branded, conversion-optimized storefront that serves as your curated product headquarters — professional and trustworthy.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0"></span>
+            <span class="text-sm text-slate-700 leading-snug">Every product links directly to an external retailer via your affiliate URL — visitor clicks, redirects, commission earned.</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0"></span>
+            <span class="text-sm text-slate-700 leading-snug">Click-through tracking and category organization give you full visibility into catalog performance and what converts.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Right: Supporting visual -->
+    <div class="sl-visual relative overflow-hidden bg-slate-50">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Professional%20branded%20affiliate%20product%20storefront%20with%20curated%20product%20catalog%20grid%2C%20clean%20e-commerce%20interface%2C%20indigo%20blue%20accents%2C%20premium%20editorial%20digital%20marketing%20tool%2C%20high%20conversion%20design"
+        alt="Affiliate storefront solution"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-50/60 to-transparent"></div>
+    </div>
+
+  </div>
+</section>
