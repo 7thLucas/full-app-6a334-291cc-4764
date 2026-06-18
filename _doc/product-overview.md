@@ -1,0 +1,1 @@
+E-commerce affiliate to external store link
